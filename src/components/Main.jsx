@@ -1,11 +1,11 @@
 import React from "react";
-import { Navbar } from "./Navbar";
-import Puppies from './Puppies';
+import { Navbar, Puppies } from "./";
 
 const Main = () => {
   return (
     <div id="main">
       <Navbar />
+      <Puppies />
     </div>
   );
 };
