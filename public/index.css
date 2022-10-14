@@ -17,7 +17,12 @@ h2 {
   color: white;
   display: flex;
   align-items: center;
+
 }
+.navName{
+  display: flex;
+}
+
 .allPups {
   background-color: white;
   display: flex;
@@ -35,8 +40,10 @@ h2 {
   margin-left: 10px;
 }
 .id {
-  font-size: 24px;
+  font-size: 15px;
   margin-right: 10px;
+  font-style: italic;
+  margin-top: 9px;
 }
 .headerName {
   display: flex;
@@ -53,9 +60,12 @@ h2 {
 .detailBtn {
   margin-left: 10px;
   margin-right: 10px;
+  margin-top: 4px;
+  margin-bottom: 2px;
 }
 .deleteBtn {
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 8px;
 
 }
