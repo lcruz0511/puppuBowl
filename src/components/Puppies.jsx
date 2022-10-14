@@ -1,10 +1,21 @@
 import React, { useEffect, useState } from "react";
+import SinglePuppy from './SinglePuppy';
 
 
 
 const Puppies = (props) => {
+    const myPuppies = props.allPuppies
+    console.log(props)
 
-  console.log(props.allPuppies)
+    return (
+    <div>{myPuppies.map((puppy)=>{
+      console.log(puppy)
+      return <SinglePuppy puppy={puppy}/>
+    })}
+    </div>)
+    
+
+  
 };
 
 export default Puppies;
