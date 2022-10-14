@@ -8,7 +8,7 @@ const Puppies = (props) => {
     console.log(props)
 
     return (
-    <div>{myPuppies.map((puppy)=>{
+    <div className="allPups">{myPuppies.map((puppy)=>{
       console.log(puppy)
       return <SinglePuppy puppy={puppy}/>
     })}

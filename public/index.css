@@ -4,6 +4,9 @@ body {
   width: 100vw;
   margin: 0;
 }
+h2 {
+  margin-left: 20px;
+}
 
 #navbar {
   font-family: 'Poller One', Arial, sans-serif;
@@ -15,4 +18,44 @@ body {
   display: flex;
   align-items: center;
 }
+.allPups {
+  background-color: white;
+  display: flex;
+}
+.puppy {
+  border: 2px solid black;
+  margin: 8px;
+  display: flex;
+  box-shadow: 2px 2px#222222;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.name {
+  font-size: 24px;
+  margin-left: 10px;
+}
+.id {
+  font-size: 24px;
+  margin-right: 10px;
+}
+.headerName {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.img {
+  display: flex;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  width: 300px;
+}
+.detailBtn {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.deleteBtn {
+  margin-left: 10px;
+  margin-right: 10px;
 
+}
