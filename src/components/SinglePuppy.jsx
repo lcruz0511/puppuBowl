@@ -12,7 +12,8 @@ const SinglePuppy = (props) => {
       <img src ={puppy.imageUrl} className ="img" />
       <button className="detailBtn">See Details</button>
         {/* <Link to={`${puppy.id}`}>See Details</Link> */}
-        {/* <Link to= "/puppies">See Details</Link> */}
+        {/* <Link to= "/puppies">
+          <button>See Details</button></Link> */}
       <button className="deleteBtn">Delete From Roster</button>
     </div>
   );

@@ -9,13 +9,10 @@ const Puppies = (props) => {
 
     return (
     <div className="allPups">{myPuppies.map((puppy)=>{
-      console.log(puppy)
+      // console.log(puppy)
       return <SinglePuppy puppy={puppy}/>
     })}
     </div>)
-    
-
-  
 };
 
 export default Puppies;

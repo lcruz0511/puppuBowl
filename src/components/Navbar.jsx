@@ -1,21 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import PuppyDetails from "./PuppyDetails";
 
 const Navbar = () => {
+  const [query, setQuery] = useState('')
   return (
     <div id="navbar">
       {/* <h2>Puppy Bowl</h2> */}
 
       <div className = "navName">
-      <div className = "nameSearch">Name: </div>
+      <div className = "nameSearch">
+        <label> Name: </label>
+        <input type="text" onChange={e => setQuery(e.target.value)}/>
 
-
-      {/* <form class="search-form" action="/search">
-          <input class= "search-bar" type="text" name="search-term" placeholder="search">
-          <button type="submit"><i class="material-icons">search</i></button>
-        </form> */}
-
-      <div className = "breedSearch">Breed: </div>
-      <button className="submitBtn">Submit</button>
+        <label> Breed: </label>
+        <input type="text" onChange={e => setQuery(e.target.value)}/>
+        </div>
+      {/* <div className = "breedSearch">Breed: </div> */}
+      <button className="submitBtn"> Submit </button>
       </div>
     </div>
   );
