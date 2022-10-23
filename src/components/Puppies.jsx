@@ -10,7 +10,7 @@ const Puppies = (props) => {
     return (
     <div className="allPups">{myPuppies.map((puppy)=>{
       // console.log(puppy)
-      return <SinglePuppy puppy={puppy}/>
+      return <SinglePuppy key={puppy.id} puppy={puppy}/>
     })}
     </div>)
 };
