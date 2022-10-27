@@ -6,6 +6,8 @@ import  PuppyDetails from "./PuppyDetails";
 
 
 const Main = () => {
+  const [query, setQuery] = useState({names:''})
+
   const [allPuppies, setAllPuppies] = useState([]);
 
   async function fetchAllPuppies() {
@@ -22,6 +24,16 @@ const Main = () => {
     }
   }
 
+  function filterAllPuppies(){
+    if (!query.names){
+    return allPuppies;
+    }else{
+      return allPuppies.filter((puppy)=>{
+        return puppy.name.toLowerCase()==query.names.toLowerCase()
+      })
+    }
+  }
+
   useEffect(() => {
     fetchAllPuppies();
   }, []);
@@ -30,12 +42,13 @@ const Main = () => {
   return (
     <BrowserRouter>
     <div id="main">
-      <Navbar />{" "}
+      <Navbar query={query} setQuery={setQuery} />
+ />{" "}
       <Routes>
         
-          <Route path="/" element={<Puppies allPuppies={allPuppies} />} />
+          <Route path="/" element={<Puppies allPuppies={filterAllPuppies()} />} />
           <Route path="/:id" element={<PuppyDetails allPuppies={allPuppies}/>} />
-        
+
         
       </Routes>
     </div>
