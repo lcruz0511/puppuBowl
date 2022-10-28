@@ -17,7 +17,6 @@ const Main = () => {
       );
       const result = await response.json();
       const puppies = result.data.players;
-      // console.log(puppies)
       setAllPuppies(puppies);
     } catch (error) {
       console.log(error);
@@ -37,7 +36,6 @@ const Main = () => {
   useEffect(() => {
     fetchAllPuppies();
   }, []);
-  // console.log(allPuppies)
 
   return (
     <BrowserRouter>
